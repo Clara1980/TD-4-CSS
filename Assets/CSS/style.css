@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+p {
+    display: none;
+}
+
+div {
+    float: left;
+}
+
+.apple {
+    width: 80%;
+    height: 30px;
+    background-color: #01D758;
+}
+
+.blue {
+    width: 20%;
+    height: 30px;
+    background-color: #0080FF;
+}
+
+.red {
+    width: 30%;
+    height: 110px;
+    background-color: #F00020;
+}
+
+.orange {
+    width: 35%;
+    height: 55px;
+    background-color: #FF7F00;
+}
+
+.grey {
+    width: 35%;
+    height: 55px;
+    background-color: #b2b0b0;
+}
+
+.yellow {
+    width: 23.4%;
+    height: 55px;
+    background-color: #E1AD01;
+}
+
+.green {
+    width: 23.4%;
+    height: 55px;
+    background-color: #399B71;
+}
+
+.orange-2 {
+    width: 23.2%;
+    height: 55px;
+    background-color: #DE5719;
+}
+
+.midnight-blue {
+    width: 100%;
+    height: 200px;
+    background-color: #1a384e;
+}
+
+@media screen and (max-width:768px) {
+    div {
+        flex-direction: column;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .body div {
+        width: 100%;
+        float: none
+    }
+
+    .red {
+        display: none;
+    }
+
+    .midnight-blue {
+background-color: #cc14b7;
+    }
+}
+
+@media screen and (min-width:992px) {
+.body div {
+    width: 100%;
+}
+
+    p {
+        text-justify: auto;
+        display: block;
+        color: white;
+        text-align: center;
+    }
+}
